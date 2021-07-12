@@ -11,6 +11,5 @@ text = """Многие думают, что Lorem Ipsum - взятый с пот
 
 
 text1 = re.split(r'\.\s|\.\n', text)
-
-
-print(text1)
+for element in text1:
+    print(element)
