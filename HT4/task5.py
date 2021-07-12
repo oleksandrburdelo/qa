@@ -9,8 +9,7 @@ text = """Многие думают, что Lorem Ipsum - взятый с пот
 эпоху Возрождения.Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк 
 в разделе 1.10.32!"""
 
-
 text1 = re.split(r'\.\s|\.\n', text)
 
-
-print(text1)
+for element in text1:
+    print(element)
