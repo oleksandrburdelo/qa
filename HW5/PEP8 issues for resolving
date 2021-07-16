@@ -1,0 +1,8 @@
+HW5/task1.py:1:1: F403 'from random import *' used; unable to detect undefined names
+HW5/task1.py:6:40: F405 'randint' may be undefined, or defined from star imports: random
+HW5/task1.py:6:49: E231 missing whitespace after ','
+HW5/task1.py:6:57: F405 'randint' may be undefined, or defined from star imports: random
+HW5/task1.py:6:66: E231 missing whitespace after ','
+HW5/task1.py:6:74: F405 'randint' may be undefined, or defined from star imports: random
+HW5/task1.py:6:80: E501 line too long (133 > 79 characters)
+HW5/task1.py:6:83: E231 missing whitespace after ','
