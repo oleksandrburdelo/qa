@@ -1,0 +1,2 @@
+./task2.py:2:32: E231 missing whitespace after ','
+./task2.py:3:1: E305 expected 2 blank lines after class or function definition, found 0
