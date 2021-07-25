@@ -13,3 +13,4 @@ def custom_m(callback: Callable, sequence):
 
 if __name__ == '__main__':
     print(custom_m(func1, nums))
+# Same issues. as in task1

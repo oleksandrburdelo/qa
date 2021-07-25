@@ -1,10 +1,8 @@
 from typing import Callable
 
-names = ['Alex', 'Ihor', 'Agnieszka', 'Ivan']
-func1 = lambda names: len(names) > 5
 
-def custom_f(callback: callable, sequence):
-    list = []
+def custom_f(callback: Callable, sequence):
+    list = []  # never name variables with existing names of types
     type_sequence = type(sequence)
     for element in sequence:
         if callback(element):
@@ -13,4 +11,5 @@ def custom_f(callback: callable, sequence):
 
 
 if __name__ == '__main__':
-    print(custom_f(func1, names))
+    print(custom_f(lambda item: item > 5, [4, 5, 6, 7]))
+# Not bad but spend amore time for naming and annotations and docstrings
