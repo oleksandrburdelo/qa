@@ -15,3 +15,4 @@ if __name__ == '__main__':
     print(diff(5, 10))
     print(div(5,10))
     print(mult(5, 10))
+    # It should not be here
