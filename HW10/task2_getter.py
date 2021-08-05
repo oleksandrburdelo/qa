@@ -49,3 +49,8 @@ if __name__ == '__main__':
         '25.06.1989',
         'Medicine',
         '03.09.2017')
+# Good code but it could be better if you will add state modification in some method -2 points
+# also try to name properties not like actions
+# @property
+# def name(self):
+#     return self.__name

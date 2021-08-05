@@ -52,3 +52,4 @@ if __name__ == '__main__':
         "Branches: 11",
         "Countries: Ukraine, USA, Slovakia, Sweden, Croatia, Poland, Germany, Canada, Israel, India, Argentina",
         "WebSite: https://www.globallogic.com/")
+# Really good code but it could be better if you will add state modification in some method -2 poinst
