@@ -28,8 +28,8 @@ class Mercedes(Car, Functions):
     @property
     def refuel_tank(self):
 
-            if self.__fuel_tank <= 80:
-                self.__fuel_tank = 40
+            if self.__fuel_tank < 80:
+                self.__fuel_tank += 40
                 print("Full fuel tank")
             else:
                 print('You should fuel your tank')
