@@ -27,19 +27,20 @@ class Mercedes(Car, Functions):
 
     @property
     def refuel_tank(self):
-
-            if self.__fuel_tank < 80:
-                self.__fuel_tank += 40
-                print("Full fuel tank")
-            else:
-                print('You should fuel your tank')
+        if self.__fuel_tank < 80:
+            self.__fuel_tank += 40
+            print("Full fuel tank")
+        else:
+            print("You should fuel your tank")
+        # TODO: getter should only return something but not modification
 
     @property
     def add_adblue(self):
         if self.__adblue == 10:
             print("Full adblue tank")
         else:
-            print('Car say bye bye')
+            print("Car say bye bye")
+        # TODO: property getter should return something. I suggest to make this property like method
 
     @staticmethod
     def move(self):
@@ -50,3 +51,4 @@ class Mercedes(Car, Functions):
         print("press brake pedal for stop")
 
 
+# Good. I see inheritance hiding and incapsulation. But incapsulation in getter should not modificate state of object but just return something
