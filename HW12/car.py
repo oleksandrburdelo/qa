@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 
 class Car(ABC):
 
+
         @staticmethod
         def turn_on_engine(self):
             print('Engine noise')
@@ -17,15 +18,15 @@ class Car(ABC):
 
         @staticmethod
         def add_adblue(self):
-            print("Fuel addblue tank on service")
+            print("Fuel adblue tank on service")
 
 
-        @abstractmethod
+        @staticmethod
         def move(self):
             """Car move"""
             pass
 
-        @abstractmethod
+        @staticmethod
         def stop(self):
             """Car stop"""
             pass
