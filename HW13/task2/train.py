@@ -1,6 +1,4 @@
-from typing import List
-
-from HW13.task2.train_car import TrainCar
+from .train_car import TrainCar
 
 
 class Train:
@@ -13,3 +11,5 @@ class Train:
     @property
     def train_cars(self):
         return self.__train_cars
+
+# Well but not described __len__ for Train class -2 points

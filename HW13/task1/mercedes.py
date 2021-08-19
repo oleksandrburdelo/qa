@@ -14,7 +14,6 @@ class MercedesBenz:
         self.__model = "C320 CDI W205"
         self.__brand = "Mercedes-Benz"
 
-
     def __clear(self, item) -> str:
         result = item.replace(f"_{self.__class__.__name__}__", "")
         return result

@@ -5,7 +5,7 @@ class TrainCar:
         self.__number_car = number_car
 
     def add_passenger(self, passengers: int):
-        if len(self.__seats_in_car) <= len(self.__passengers + passengers):
+        if self.__seats_in_car <= len(self.__passengers + passengers):
             self.__passengers.append(passengers)
         else:
             print("There is no free seats in train")
