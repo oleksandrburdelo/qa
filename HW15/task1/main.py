@@ -2,7 +2,7 @@ from HW15.task1.dragon import Dragon
 
 
 if __name__ == '__main__':
-    dragon = Dragon('Diamondwing Dragon',
+    dragon1 = Dragon('Diamondwing Dragon',
                     'Eyes: 2',
                     'Limbs:4',
                     'Tail: 1',
@@ -11,4 +11,4 @@ if __name__ == '__main__':
                     'Bones: 1000',
                     'Color: Purple')
 
-    print(dragon)
+    print(dragon1.eyes)
