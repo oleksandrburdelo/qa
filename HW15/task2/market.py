@@ -1,17 +1,19 @@
 from abc import abstractmethod
 
-from HW15.task2.positions import Banana, Strawberry, Apple, Cellery
+from HW15.task2.positions import Banana, Strawberry, Apple, Celery
 from HW15.task2.product import Product
 
-class Market():
-    @abstractmethod
+
+class Market:
+    # @abstractmethod # well it could not be abstract since you have implementation. You should use static method
+    @staticmethod  # -1 point
     def get_fruit(name: str) -> Product:
         if name == "banana":
             return Banana()
         elif name == "apple":
             return Apple()
-        elif name == "cellery":
-            return Cellery()
+        elif name == "celery":
+            return Celery()
         elif name == "strawberry":
             return Strawberry()
         else:
@@ -23,10 +25,10 @@ if __name__ == '__main__':
 
     # 1 variant: (objects diplayed as same object)
 
-    # print(Market.get_fruit("banana"))
-    # print(Market.get_fruit("apple"))
-    # print(Market.get_fruit("cellery"))
-    # print(Market.get_fruit("strawberry"))
+    print(Market.get_fruit("banana"))
+    print(Market.get_fruit("apple"))
+    print(Market.get_fruit("celery"))
+    print(Market.get_fruit("strawberry"))
 
 
 
