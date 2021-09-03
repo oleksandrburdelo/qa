@@ -1,4 +1,4 @@
-class ITR:
+class ITR:  # Not clear naming. What does it mean?
     def __init__(self, sequence: list, start: int, stop: int, step=1):
         self.__sequence = sequence
         self.__start = start

@@ -1,4 +1,4 @@
-from task2 import ITR
+from HW14.task2.task2 import ITR
 
 if __name__ == '__main__':
     list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

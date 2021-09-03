@@ -1,12 +1,14 @@
-from human import Human
+from HW14.task.human import Human
 
 if __name__ == '__main__':
-    james = Human("James", 11)
-    john = Human("John", 39)
-    marta = Human("Marta", 28)
-    alex = Human("Alex", 5)
+    james = Human("James", 11, "dancing")
+    john = Human("John", 39, "swimming")
+    marta = Human("Marta", 28, "running")
+    alex = Human("Alex", 5, "eating")
 
-    peoples = [james, john, marta, alex]
+    people = [james, john, marta, alex]
 
-for people in peoples:
-    print(people.getlicense)
+    for human in people:
+        print(human.action())
+
+# take a look on alternative solution
