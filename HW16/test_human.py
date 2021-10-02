@@ -1,6 +1,5 @@
 import pytest
 
-
 def test_01(human):
     """Test checks age of human"""
     assert human.age == 23
