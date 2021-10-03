@@ -33,24 +33,24 @@ def test_05(human, monkeypatch):
         human._Human__is_alive()
 
 
-def test_05(human):
+def test_06(human):
     """Test checks alive status"""
     assert human._Human__is_alive() is True
 
 
-def test_06(human):
+def test_07(human):
     """Test checks correct gender"""
     assert human.gender == "male"
 
 
-def test_07(human):
+def test_08(human):
     """Test checks changing gender"""
     human.change_gender('female')
     assert human.gender == 'female'
 
 
 
-def test_08(human):
+def test_09(human):
     """
     This test check changing gender to incorrect gender
     """
@@ -58,7 +58,7 @@ def test_08(human):
         human.change_gender(" ")
 
 
-def test_11(human):
+def test_10(human):
     """
     This test check not correct gender
     """
