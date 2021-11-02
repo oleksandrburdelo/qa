@@ -32,12 +32,13 @@ class Dashboard(BasePage):
     def check_rules(self) -> None:
         self._scroll_page((By.XPATH, "//a[@href='https://docs.radarscreen.com.ua/docs/ua/rules.html']"))
 
-    def check_test_send_SMS(self, name: str) -> None:
-        searching_popUP = self._click((By.XPATH, f"//span[text()= '{name}']"))
-        searching_popUP.send_keys("380996021362")
-
-    def send_MSISDN(self) -> None:
-        self.(By.XPATH, '//input[1]')
+    """I have a question with this elements"""
+    # def check_test_send_SMS(self, name: str) -> None:
+    #     searching_popUP = self._click((By.XPATH, f"//span[text()= '{name}']"))
+    #     searching_popUP.send_keys("380996021362")
+    #
+    # def send_MSISDN(self) -> None:
+    #     self.(By.XPATH, '//input[1]')
 
 
 
