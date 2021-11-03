@@ -13,7 +13,7 @@ class BasePage:
         self.__action = ActionChains(self._driver)
         self.__web_driver_wait = WebDriverWait(self._driver, 10)
 
-    def _wait_until_element_appears(self, locator: Tuple[By, str]) -> WebElement:
+    def _wait_until_element_appears(self, locator) -> WebElement:
         return self.__web_driver_wait.until(
             EC.presence_of_element_located(locator)
         )

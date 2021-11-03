@@ -17,7 +17,7 @@ def test_rules_doc(dashboard):
 
 
 def test_sending_link_via_SMS(dashboard):
-    dashboard.check_test_send_SMS("Завантажити додаток")
+    dashboard.check_test_send_SMS()
 
 
 

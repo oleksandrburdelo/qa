@@ -10,6 +10,8 @@ from .base_page import BasePage
 class Dashboard(BasePage):
     def __init__(self, driver: WebDriver):
         super().__init__(driver)
+        self.__open_popUP = "//span[text()='Завантажити додаток']"
+
 
     def change_lang_on_russian(self, name: str) -> None:
          time.sleep((1))
@@ -32,13 +34,16 @@ class Dashboard(BasePage):
     def check_rules(self) -> None:
         self._scroll_page((By.XPATH, "//a[@href='https://docs.radarscreen.com.ua/docs/ua/rules.html']"))
 
-    """I have a question with this elements"""
-    # def check_test_send_SMS(self, name: str) -> None:
-    #     searching_popUP = self._click((By.XPATH, f"//span[text()= '{name}']"))
-    #     searching_popUP.send_keys("380996021362")
-    #
-    # def send_MSISDN(self) -> None:
-    #     self.(By.XPATH, '//input[1]')
+    def check_test_send_SMS(self) -> None:
+        self._click((By.XPATH, f"//span[text()='Завантажити додаток']"))
+        ((By.XPATH, f"//input[1]"))
+        # input_field.send_keys("380996021362")
+        # input_field.send_keys(Keys.ENTER)
+
+        # input_field = ((By.XPATH, f"//input[1]"))
+        # input_field.send_keys("380996021362")
+        # input_field.send_keys(Keys.ENTER)
+
 
 
 
